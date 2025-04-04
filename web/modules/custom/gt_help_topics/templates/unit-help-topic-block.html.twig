@@ -1,0 +1,21 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<div id="gt-help-topics-unit-block" {{ attributes.addClass(classes) }}>
+  <p>{{ content.intro }}</p>
+  <h2>I want assistance with...</h2>
+  <div id="help-topic-select" class="control-wrapper">
+    {{ content.unit_topics }}
+    <div id="topic-go-button" class="button">GO</div>
+  </div>
+</div>

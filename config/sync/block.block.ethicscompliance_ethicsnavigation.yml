@@ -1,0 +1,29 @@
+uuid: e27c9c84-688b-4162-93ce-f3a5f21b6381
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.ethics-navigation
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_ethicsnavigation
+theme: ethicscompliance
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'system_menu_block:ethics-navigation'
+settings:
+  id: 'system_menu_block:ethics-navigation'
+  label: 'Ethics Navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/ethics/*\r\n/ethics-and-compliance/*\r\n/ethics-and-compliance"

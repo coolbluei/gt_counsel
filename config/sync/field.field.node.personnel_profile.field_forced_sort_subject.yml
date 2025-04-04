@@ -1,0 +1,25 @@
+uuid: 0e1180bf-3e1e-4954-87fe-139112449c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forced_sort_subject
+    - node.type.personnel_profile
+id: node.personnel_profile.field_forced_sort_subject
+field_name: field_forced_sort_subject
+entity_type: node
+bundle: personnel_profile
+label: 'Forced Team Sort'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

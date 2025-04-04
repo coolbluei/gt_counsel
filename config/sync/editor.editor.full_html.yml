@@ -1,0 +1,147 @@
+uuid: 6086d00b-ac82-47f2-bbae-2f7b91d26391
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor5
+format: full_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - horizontalLine
+      - alignment
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - drupalMedia
+      - blockQuote
+      - drupalInsertImage
+      - insertTable
+      - imce_image
+      - '|'
+      - heading
+      - codeBlock
+      - '|'
+      - sourceEditing
+      - style
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_codeBlock:
+      languages:
+        -
+          label: 'Plain text'
+          language: plaintext
+        -
+          label: C
+          language: c
+        -
+          label: 'C#'
+          language: cs
+        -
+          label: C++
+          language: cpp
+        -
+          label: CSS
+          language: css
+        -
+          label: Diff
+          language: diff
+        -
+          label: HTML
+          language: html
+        -
+          label: Java
+          language: java
+        -
+          label: JavaScript
+          language: javascript
+        -
+          label: PHP
+          language: php
+        -
+          label: Python
+          language: python
+        -
+          label: Ruby
+          language: ruby
+        -
+          label: TypeScript
+          language: typescript
+        -
+          label: XML
+          language: xml
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: Button
+          element: '<button class="btn btn-primary">'
+        -
+          label: 'Solid Icon'
+          element: '<i class="fas">'
+        -
+          label: 'Regular Icon'
+          element: '<i class="far">'
+        -
+          label: 'Small Text'
+          element: '<p class="small">'
+        -
+          label: 'Intro Text'
+          element: '<p class="lead">'
+        -
+          label: "Person's Title"
+          element: '<p class="person-title">'
+        -
+          label: 'Float left 50%'
+          element: '<div class="w-50 float-left">'
+        -
+          label: 'Float right 50%'
+          element: '<div class="w-50 float-right">'
+    editor_advanced_link_link:
+      enabled_attributes:
+        - aria-label
+        - class
+        - id
+        - rel
+        - target
+        - title
+    media_media:
+      allow_view_mode_override: false
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 0
+    height: 0

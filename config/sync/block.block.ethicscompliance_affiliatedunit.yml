@@ -1,0 +1,29 @@
+uuid: 1a443bb2-a99f-4869-a67b-c7d3a27b8a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.affiliated-unit
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_affiliatedunit
+theme: ethicscompliance
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'system_menu_block:affiliated-unit'
+settings:
+  id: 'system_menu_block:affiliated-unit'
+  label: 'Affiliated Organizations'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/affiliated/*\r\n/affiliated-organizations/*"
