@@ -20,22 +20,22 @@
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_profile.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_theme.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/gt_tools.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.gatech.edu/ICWebTeam/hg_reader.git"
-    }
+      {
+          "type": "path",
+          "url": "gt/gt_profile"
+      },
+      {
+          "type": "path",
+          "url": "gt/gt_theme"
+      },
+      {
+          "type": "path",
+          "url": "gt/gt_tools"
+      },
+      {
+          "type": "path",
+          "url": "gt/hg_reader"
+      }
   ],
   "require": {
     "php": ">=8.1",
