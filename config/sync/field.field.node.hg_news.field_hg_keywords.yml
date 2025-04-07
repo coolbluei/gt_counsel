@@ -6,12 +6,6 @@ dependencies:
     - field.storage.node.field_hg_keywords
     - node.type.hg_news
     - taxonomy.vocabulary.hg_keywords
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: rBdgSyDXSgsOzkBxO5Jck_2NRBAVqzrWaAljbMFvhEg
 id: node.hg_news.field_hg_keywords

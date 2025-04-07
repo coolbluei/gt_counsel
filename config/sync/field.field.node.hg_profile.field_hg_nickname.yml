@@ -5,12 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_hg_nickname
     - node.type.hg_profile
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: Hei7kfEMHHfQtUkkc7e5hWJ7vI3tr5_5DnFXRW035dg
 id: node.hg_profile.field_hg_nickname

@@ -11,3 +11,4 @@ name: Categories
 vid: hg_categories
 description: 'News categories from Mercury'
 weight: 0
+new_revision: false

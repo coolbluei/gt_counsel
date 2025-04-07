@@ -6,14 +6,9 @@ dependencies:
     - field.storage.node.field_hg_related_files
     - node.type.hg_event
   module:
-    - custom_add_another
     - file
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
-  default_config_hash: O8VgnEhfCsQ33tsd_dcjyR9HvUscx-fLYv7dknPtk1U
+  default_config_hash: 6lXXAx-j4-eJlhG0bF82toroR8RgN-PQ8sLeb0kGrhE
 id: node.hg_event.field_hg_related_files
 field_name: field_hg_related_files
 entity_type: node
@@ -25,10 +20,10 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
   file_directory: 'hg_attachments/[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp svg'
+  file_extensions: 'doc docx jpg jpeg gif odp ods odt pdf png pps ppt svg txt xls'
   max_filesize: 2MB
   description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
 field_type: file

@@ -6,7 +6,9 @@ features:
 logo:
   use_default: 1
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://gt-favicon.png'
+  mimetype: image/png
 contact_title: ''
 contact_address: ''
 contact_address_2: ''

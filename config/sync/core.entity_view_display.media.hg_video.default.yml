@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.media.hg_video.field_media_hg_video
+    - field.field.media.hg_video.field_mercury_id
     - media.type.hg_video
   module:
     - media
+_core:
+  default_config_hash: qgP0gd2qdOUD-fNXfVPdeoz1wIMelSUtbAP0QnSKlSk
 id: media.hg_video.default
 targetEntityType: media
 bundle: hg_video
@@ -22,6 +25,15 @@ content:
         attribute: eager
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_mercury_id:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   created: true

@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.hg_news.field_hg_importer
     - field.field.node.hg_news.field_hg_keywords
     - field.field.node.hg_news.field_hg_location
+    - field.field.node.hg_news.field_hg_media
     - field.field.node.hg_news.field_hg_news_room_topics
     - field.field.node.hg_news.field_hg_related_files
     - field.field.node.hg_news.field_hg_related_links
@@ -30,7 +31,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: w6tW3r3LaGRZ07b-CyQIYNhKNCDd8fSGUX_WopwAk_4
+  default_config_hash: X9LrWPYJQKc7pabu5sUqzuLZ3TCN-y6USbvOqXjZLec
 id: node.hg_news.teaser
 targetEntityType: node
 bundle: hg_news
@@ -81,6 +82,7 @@ hidden:
   field_hg_id: true
   field_hg_importer: true
   field_hg_keywords: true
+  field_hg_media: true
   field_hg_news_room_topics: true
   field_hg_related_files: true
   field_hg_related_links: true

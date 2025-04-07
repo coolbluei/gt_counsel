@@ -16,7 +16,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: UqFbTAggsAPXtYWNa57CTAqFhtcx7N7xIGQMGfoGZUU
+  default_config_hash: cmrC8xfUJL7ql4n2tcWk1ev4DiMo700HOqivAv_vKm8
 id: node.hg_video.default
 targetEntityType: node
 bundle: hg_video
@@ -114,7 +114,13 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

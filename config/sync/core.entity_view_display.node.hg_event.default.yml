@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.hg_event.field_hg_location_email
     - field.field.node.hg_event.field_hg_location_phone
     - field.field.node.hg_event.field_hg_location_url
+    - field.field.node.hg_event.field_hg_media
     - field.field.node.hg_event.field_hg_related_files
     - field.field.node.hg_event.field_hg_related_links
     - field.field.node.hg_event.field_hg_sidebar
@@ -36,7 +37,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: rX55awD5_V91myYBNgUk5SY9X7YOeJGtoQGCBeE0S7Y
+  default_config_hash: U57ue8jglr-IX9PGjd4GYWcQSTVQWW1QGGHrncfRLzk
 id: node.hg_event.default
 targetEntityType: node
 bundle: hg_event
@@ -71,6 +72,7 @@ content:
       timezone_override: ''
       format_type: medium
       separator: '-'
+      from_to: both
     third_party_settings: {  }
     weight: 104
     region: content
@@ -112,8 +114,6 @@ content:
     settings:
       image_link: ''
       image_style: ''
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 119
     region: content
@@ -176,6 +176,14 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_hg_media:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 20
     region: content
   field_hg_related_files:
     type: file_default

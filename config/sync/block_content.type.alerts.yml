@@ -6,5 +6,5 @@ _core:
   default_config_hash: pLBxkhR1om2_CBgdQdGjtOSnIgUrOpseU53pXD-06_g
 id: alerts
 label: Alerts
-revision: 1
+revision: true
 description: 'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.'

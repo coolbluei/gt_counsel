@@ -11,3 +11,4 @@ name: 'Invited audience'
 vid: hg_invited_audience
 description: 'Invited audience(s) for Mercury events'
 weight: 0
+new_revision: false

@@ -6,5 +6,5 @@ _core:
   default_config_hash: yb2WbRYM48xO7GcUF7NWC9KtV1GOvl6UdrHe0I1nlIE
 id: custom_links
 label: 'Custom Links'
-revision: 1
+revision: true
 description: 'Add buttons with multiple styles'

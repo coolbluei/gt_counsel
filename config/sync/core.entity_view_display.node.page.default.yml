@@ -58,9 +58,7 @@ third_party_settings:
         Forms: {  }
         Help: {  }
         'Inline blocks': {  }
-        'Lists (Views)':
-          - 'views_block:hg_events-block_1'
-          - 'views_block:hg_news-block_1'
+        'Lists (Views)': {  }
         Menus: {  }
         'Social Media Links Block': {  }
         System: {  }

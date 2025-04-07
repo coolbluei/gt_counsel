@@ -11,3 +11,4 @@ name: Keywords
 vid: hg_keywords
 description: 'Free tagging terms from Mercury'
 weight: 0
+new_revision: false

@@ -6,5 +6,5 @@ _core:
   default_config_hash: 5qgUjRIlUpmA0kt5dTzeB13-MG9fjTIAPMWuG66Eh0s
 id: image
 label: Image
-revision: 1
+revision: true
 description: 'Upload an and link an Image.'

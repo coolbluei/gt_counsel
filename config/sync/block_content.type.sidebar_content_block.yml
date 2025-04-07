@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: sidebar_content_block
 label: 'Sidebar Content Block'
-revision: 0
+revision: false
 description: 'A simple block with a top bar denoting sidebar content.'

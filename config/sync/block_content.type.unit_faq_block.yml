@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: unit_faq_block
 label: 'Unit Faq Block'
-revision: 0
+revision: false
 description: ''

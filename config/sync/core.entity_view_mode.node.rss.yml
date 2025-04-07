@@ -8,5 +8,6 @@ _core:
   default_config_hash: jSju9ql3RHXGbf1YASw44ECRXF4OfFSo_wy6T7OdPmc
 id: node.rss
 label: RSS
+description: ''
 targetEntityType: node
 cache: true

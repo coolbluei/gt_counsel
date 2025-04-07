@@ -6,5 +6,5 @@ _core:
   default_config_hash: bY5cSx0sNkSSZH7ZkVozNNigdO5ABsOoow-WuyuTYuQ
 id: modal_image
 label: 'Modal Image'
-revision: 1
+revision: true
 description: 'Insert image that pops open with title and description.'

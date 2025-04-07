@@ -6,5 +6,5 @@ _core:
   default_config_hash: meKBLdjCd1ivsW0DDaFWALH88-Qf2M8BWpAT1bQxxFM
 id: banner
 label: Banner
-revision: 1
+revision: true
 description: 'Hero image with text for use in the Full Width regions and/or with Layout Builder (restricted width).'

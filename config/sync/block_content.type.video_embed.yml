@@ -6,5 +6,5 @@ _core:
   default_config_hash: RIQBw-Nxo92NHKzUeTQ8yD6YvTvfJEN7ryVkeMiEmcg
 id: video_embed
 label: 'Video Embed'
-revision: 1
+revision: true
 description: 'Add a YouTube or Vimeo video.'

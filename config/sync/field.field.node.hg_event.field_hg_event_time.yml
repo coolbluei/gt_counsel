@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_hg_event_time
     - node.type.hg_event
   module:
-    - custom_add_another
     - datetime_range
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: f65g3VdMiaWjpONKp-j9WEX-70kL6xNas0FCd1XAgP4
 id: node.hg_event.field_hg_event_time

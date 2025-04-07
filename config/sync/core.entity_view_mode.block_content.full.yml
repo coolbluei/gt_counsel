@@ -8,5 +8,6 @@ _core:
   default_config_hash: 3QFobjBezbHdJRR05FB83hwYpPDBvC8C49VXhO3ksW4
 id: block_content.full
 label: Full
+description: ''
 targetEntityType: block_content
 cache: true

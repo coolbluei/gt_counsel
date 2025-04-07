@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: headshot_message
 label: 'Headshot Message'
-revision: 0
+revision: false
 description: 'Headshot image to the left with name and title.  Message to the right.'

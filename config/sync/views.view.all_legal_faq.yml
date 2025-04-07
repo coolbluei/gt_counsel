@@ -176,6 +176,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -349,7 +350,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
       tags:
         - 'config:field.storage.gt_legal_faq_entity.field_answer'
   block_1:
@@ -557,7 +557,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: numeric
+          plugin_id: entity_target_id
           default_action: default
           exception:
             value: all
@@ -573,7 +573,6 @@ display:
             vids:
               tags: tags
             anyall: +
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -590,6 +589,7 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+          target_entity_type_id: taxonomy_term
       filters:
         status:
           id: status
@@ -706,7 +706,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
       tags:
         - 'config:field.storage.gt_legal_faq_entity.field_answer'
         - 'config:field.storage.gt_legal_faq_entity.field_subject_matter'
@@ -915,7 +914,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: numeric
+          plugin_id: entity_target_id
           default_action: default
           exception:
             value: all
@@ -931,7 +930,6 @@ display:
             vids:
               tags: tags
             anyall: +
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -948,6 +946,7 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+          target_entity_type_id: taxonomy_term
       filters:
         status:
           id: status
@@ -1064,7 +1063,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
       tags:
         - 'config:field.storage.gt_legal_faq_entity.field_answer'
         - 'config:field.storage.gt_legal_faq_entity.field_subject_matter'
@@ -1361,7 +1359,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
       tags:
         - 'config:field.storage.gt_legal_faq_entity.field_answer'
         - 'config:field.storage.gt_legal_faq_entity.field_subject_matter'

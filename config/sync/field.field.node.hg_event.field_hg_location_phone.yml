@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_hg_location_phone
     - node.type.hg_event
   module:
-    - custom_add_another
     - telephone
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: ChANETwNlaoWCDC5PEjfFOfeCos3tx8kgy7PbmRQMk4
 id: node.hg_event.field_hg_location_phone

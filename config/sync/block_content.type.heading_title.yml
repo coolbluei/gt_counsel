@@ -6,5 +6,5 @@ _core:
   default_config_hash: guHmB8NxNyfP_qwKPO4TggcYImHLRXLlsJr4r2tsM_k
 id: heading_title
 label: 'Heading Title'
-revision: 0
+revision: false
 description: 'Add a title heading.'

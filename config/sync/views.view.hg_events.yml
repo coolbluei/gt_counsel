@@ -6,11 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.hg_event
   module:
-    - datetime
     - node
     - user
 _core:
-  default_config_hash: CD6yqQfo9yZkosBcrA8oraftFUPsjz_ftqNWU0TZI7w
+  default_config_hash: Z2rJOQRfYhJwzwgZd2DlL-DXRVxAmGQqidRB0jnu7pc
 id: hg_events
 label: 'Mercury events'
 module: views
@@ -92,6 +91,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

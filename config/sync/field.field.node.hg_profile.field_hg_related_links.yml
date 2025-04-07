@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_hg_related_links
     - node.type.hg_profile
   module:
-    - custom_add_another
     - link
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: UWCTLx-sX0h9n_oOlQhDh5hreOb-_iYCantNVNmRCXk
 id: node.hg_profile.field_hg_related_links
@@ -25,6 +20,6 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  title: 1
   link_type: 17
+  title: 1
 field_type: link

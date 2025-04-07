@@ -8,3 +8,4 @@ name: Style
 vid: style
 description: 'Style sets for element forms'
 weight: 0
+new_revision: false

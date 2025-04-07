@@ -1,4 +1,4 @@
-uuid: a8ebc3e2-79c4-4c3a-b8d2-f2f41d706502
+uuid: 132dfe42-7434-4158-baad-e699f7837a00
 langcode: en
 status: true
 dependencies:
@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.hg_news.field_hg_importer
     - field.field.node.hg_news.field_hg_keywords
     - field.field.node.hg_news.field_hg_location
+    - field.field.node.hg_news.field_hg_media
     - field.field.node.hg_news.field_hg_news_room_topics
     - field.field.node.hg_news.field_hg_related_files
     - field.field.node.hg_news.field_hg_related_links
@@ -31,9 +32,8 @@ dependencies:
     - link
     - text
     - user
-    - video_embed_field
 _core:
-  default_config_hash: rUhL5yjW7GQtzf32SWw3UCRV-Aj-7qtMo56D5kz8UFw
+  default_config_hash: dwPnOp9yGtgVscBi8N8R0Xfd8XzfMEDNRr9Jz_ExvyU
 id: node.hg_news.default
 targetEntityType: node
 bundle: hg_news
@@ -130,6 +130,15 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
+  field_hg_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 20
+    region: content
   field_hg_news_room_topics:
     type: entity_reference_label
     label: above
@@ -207,20 +216,10 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_hg_youtube_video:
-    type: video_embed_field_video
-    label: above
-    settings:
-      autoplay: true
-      responsive: true
-      width: 854
-      height: 480
-    third_party_settings: {  }
-    weight: 14
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_hg_youtube_video: true

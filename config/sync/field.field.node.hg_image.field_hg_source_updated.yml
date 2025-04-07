@@ -5,12 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_hg_source_updated
     - node.type.hg_image
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: eNKnV8oodE3_pRukmVTHlofA8_5mdlm4z28i_20zzkI
 id: node.hg_image.field_hg_source_updated

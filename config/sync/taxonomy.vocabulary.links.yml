@@ -8,3 +8,4 @@ name: Links
 vid: links
 description: 'Styling for links and buttons'
 weight: 0
+new_revision: false

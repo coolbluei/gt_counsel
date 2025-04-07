@@ -11,3 +11,4 @@ name: 'Core research areas'
 vid: hg_core_research_areas
 description: 'Core research areas from Mercury'
 weight: 0
+new_revision: false

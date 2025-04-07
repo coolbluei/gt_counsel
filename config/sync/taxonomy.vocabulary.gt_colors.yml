@@ -8,3 +8,4 @@ name: 'GT Colors'
 vid: gt_colors
 description: 'A list of offical Georgia Tech colors'
 weight: 0
+new_revision: false

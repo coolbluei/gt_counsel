@@ -6,5 +6,5 @@ _core:
   default_config_hash: OzwHAoqunfkW9TdmIpttgB3qyAU-qHDTqTzfZD3st0Y
 id: image_with_copy
 label: 'Image with copy'
-revision: 1
+revision: true
 description: 'Add an image with copy and link.'

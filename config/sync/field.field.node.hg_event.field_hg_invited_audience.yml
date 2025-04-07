@@ -6,12 +6,6 @@ dependencies:
     - field.storage.node.field_hg_invited_audience
     - node.type.hg_event
     - taxonomy.vocabulary.hg_invited_audience
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: zBAMkfp44Qy-BQnrogGyAogd30Up_4QCvbku6vPG3VA
 id: node.hg_event.field_hg_invited_audience

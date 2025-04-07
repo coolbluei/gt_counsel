@@ -6,5 +6,5 @@ _core:
   default_config_hash: qsC3wgsbwe75oxb7hxybhSTpE6lTJ9xZFVK2VAA4s5E
 id: quote_text
 label: 'Quote Text'
-revision: 1
+revision: true
 description: 'Add  a paragraph wrapped in quotes.'

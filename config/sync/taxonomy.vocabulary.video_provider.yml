@@ -8,3 +8,4 @@ name: 'Video Provider'
 vid: video_provider
 description: 'Select video providers for output'
 weight: 0
+new_revision: false

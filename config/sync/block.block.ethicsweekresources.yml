@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:sidebar_content_block:a8f8f3cc-2f09-4213-9b78-e7d1efedbe7d'
   module:
     - block_content
+    - node
     - system
   theme:
     - ethicscompliance
@@ -28,3 +29,11 @@ visibility:
     id: request_path
     negate: false
     pages: /node/13
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      page: page

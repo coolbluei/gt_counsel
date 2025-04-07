@@ -11,3 +11,4 @@ name: 'News room topics'
 vid: hg_news_room_topics
 description: 'Topics pertaining to the top-level newsroom (www.news.gatech.edu)'
 weight: 0
+new_revision: false

@@ -6,5 +6,5 @@ _core:
   default_config_hash: cPRst5cW_PvtyNSpvasHFCx2Yn6u5micm8GhXq-1Bmg
 id: multi_links
 label: Links
-revision: 1
+revision: true
 description: 'Add button links.'

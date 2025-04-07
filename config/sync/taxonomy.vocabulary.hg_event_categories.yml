@@ -11,3 +11,4 @@ name: 'Event categories'
 vid: hg_event_categories
 description: 'Event categories from Mercury'
 weight: 0
+new_revision: false

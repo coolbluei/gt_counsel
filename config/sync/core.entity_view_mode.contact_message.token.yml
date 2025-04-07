@@ -8,5 +8,6 @@ _core:
   default_config_hash: S0zi3WYZpl89PR7npUCD0V4QWItX98-K_Cll0hxQkkA
 id: contact_message.token
 label: Token
+description: ''
 targetEntityType: contact_message
 cache: true

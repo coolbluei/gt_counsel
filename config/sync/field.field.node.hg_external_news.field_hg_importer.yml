@@ -5,12 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_hg_importer
     - node.type.hg_external_news
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: pk5tj2UIykXzyNSt9mobMtY96Mm1FPDRchNMyxZ21jg
 id: node.hg_external_news.field_hg_importer

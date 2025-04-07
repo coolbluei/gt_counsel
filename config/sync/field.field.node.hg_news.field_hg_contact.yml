@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_hg_contact
     - node.type.hg_news
   module:
-    - custom_add_another
     - text
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: eWw6lTsrmTSS06JhljHPV_oZ6RJTYUQFnMhpe5qPvzU
 id: node.hg_news.field_hg_contact
@@ -24,5 +19,6 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long

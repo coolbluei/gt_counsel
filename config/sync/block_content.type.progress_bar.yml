@@ -6,5 +6,5 @@ _core:
   default_config_hash: zsyaSiNHaN2f6LnTfKdJEfsfRgAqur25wpzDd3LAYkc
 id: progress_bar
 label: 'Progress Bar'
-revision: 1
+revision: true
 description: 'Add a custom progress bar'

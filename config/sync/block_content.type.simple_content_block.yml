@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: simple_content_block
 label: 'Simple Content Block'
-revision: 0
+revision: false
 description: 'Content block with no particular styling applied and no special fields.'

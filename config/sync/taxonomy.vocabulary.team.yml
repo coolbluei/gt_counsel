@@ -6,3 +6,4 @@ name: Team
 vid: team
 description: 'Team within a unit'
 weight: 0
+new_revision: false

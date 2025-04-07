@@ -15,7 +15,7 @@ _core:
 name: Feature
 type: feature
 description: 'A node/entity-only (e.g. no blocks) system for rich pages.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

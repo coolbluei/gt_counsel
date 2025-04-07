@@ -6,12 +6,6 @@ dependencies:
     - field.storage.node.field_hg_event_categories
     - node.type.hg_event
     - taxonomy.vocabulary.hg_event_categories
-  module:
-    - custom_add_another
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: QsYyIqwfTMEktDBoOfS6QzvNXeHChkgcZhquCw1Ne2s
 id: node.hg_event.field_hg_event_categories

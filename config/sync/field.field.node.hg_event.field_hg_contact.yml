@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_hg_contact
     - node.type.hg_event
   module:
-    - custom_add_another
     - text
-third_party_settings:
-  custom_add_another:
-    custom_add_another: ''
-    custom_remove: ''
 _core:
   default_config_hash: P8D_TguspjtYpRSN_panOs270rFXxrh6ftGBW_1SsoM
 id: node.hg_event.field_hg_contact
@@ -24,5 +19,6 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long
