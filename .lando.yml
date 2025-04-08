@@ -4,14 +4,16 @@ config:
   php: '8.2'
   via: 'nginx'
   webroot: './web'
-  database: 'mysql:5.7'
   xdebug: true
   config:
     php: lando.php.ini
 services:
   appserver:
-    build:
-      - composer install
+    build_as_root:
+      - apt-get update -y
+      - apt-get install libxslt1-dev -y
+      - docker-php-ext-install xsl
+      - docker-php-ext-enable xsl
     overrides:
       environment:
         DRUSH_OPTIONS_URI: "https://gencon.lndo.site"
