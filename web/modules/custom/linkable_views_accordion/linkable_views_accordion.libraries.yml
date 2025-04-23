@@ -1,0 +1,3 @@
+linkable_views_accordion.accordion:
+  dependencies:
+    - views_accordion/views_accordion.accordion

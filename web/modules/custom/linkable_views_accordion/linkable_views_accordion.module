@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Provides an accordion display style for Views.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Preprocess function for linkable_views_accordion_view template.
+ *
+ * Default template: linkable-views-accordion-view.html.twig.
+ *
+ * @{inheritdoc}
+ *
+ * We just want our own template to be able to guarantee some markup.
+ * @see template_preprocess_views_view_unformatted()
+ */
+function template_preprocess_linkable_views_accordion_view(&$variables) {
+  \Drupal::moduleHandler()->loadInclude('views', 'inc', 'views.theme');
+  template_preprocess_views_view_unformatted($variables);
+}

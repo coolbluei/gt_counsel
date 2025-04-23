@@ -13,3 +13,10 @@ banner-with-overlay:
       templates/block/banner_with_overlay/css/banner-overlay.css: {}
   dependencies:
     - core/jquery
+accordion-view:
+  js:
+    js/copylink.js: {}
+  dependencies:
+    - core/jquery
+    - gt/gt-accordion
+    - views_accordion/views_accordion.accordion

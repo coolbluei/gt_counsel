@@ -686,4 +686,17 @@ article.node--type-personnel-profile .field--name-field-email a {
   break-inside: avoid;
 }
 
+.ui-accordion-content .views-row.gt-accordion {
+	margin-bottom: 1.5rem;
+}
+
+.views-row.gt-accordion h3.ui-accordion-header .copy-link {
+	font-weight: 700;
+	float: right;
+}
+
+.ui-accordion-content .views-row.gt-accordion:last-of-type {
+	margin-bottom: 0;
+}
+
 /* EOF to help git */

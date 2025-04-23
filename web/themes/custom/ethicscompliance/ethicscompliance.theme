@@ -97,4 +97,3 @@ function ethicscompliance_preprocess_field(&$variables)
     $variables['items'][0]['content']['#title'] = 'Email';
   }
 }
-
