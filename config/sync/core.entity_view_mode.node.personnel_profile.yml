@@ -1,0 +1,11 @@
+uuid: cccb711b-f0c2-4467-843f-ce0ac5d97b8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.personnel_profile
+label: 'Personnel Profile'
+description: ''
+targetEntityType: node
+cache: true

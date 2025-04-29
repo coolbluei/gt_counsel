@@ -1,0 +1,52 @@
+uuid: 08647d71-e3a1-46c8-a507-9c9e0d71ca39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.personnel_profile
+    - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_email
+    - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_sort_order
+    - field.field.node.personnel_profile.field_forced_sort_subject
+    - field.field.node.personnel_profile.field_image
+    - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_last_name
+    - field.field.node.personnel_profile.field_leadership
+    - field.field.node.personnel_profile.field_personnel_unit
+    - field.field.node.personnel_profile.field_subject_mater
+    - field.field.node.personnel_profile.field_team
+    - node.type.personnel_profile
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.personnel_profile.personnel_profile
+targetEntityType: node
+bundle: personnel_profile
+mode: personnel_profile
+content:
+  field_team:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_email: true
+  field_first_name: true
+  field_forced_sort_order: true
+  field_forced_sort_subject: true
+  field_image: true
+  field_job_title: true
+  field_last_name: true
+  field_leadership: true
+  field_personnel_unit: true
+  field_subject_mater: true
+  links: true
