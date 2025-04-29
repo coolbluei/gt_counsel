@@ -4,7 +4,6 @@ namespace Drupal\linkable_views_accordion\Plugin\views\style;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\Plugin\views\style\StylePluginBase;
-use Drupal\views_accordion\Plugin\views\style\ViewsAccordion;
 
 /**
  * Style plugin to render each item in an ordered or unordered list.
@@ -19,7 +18,7 @@ use Drupal\views_accordion\Plugin\views\style\ViewsAccordion;
  *   display_types = {"normal"}
  * )
  */
-class LinkableViewsAccordion extends ViewsAccordion {
+class LinkableViewsAccordion extends StylePluginBase {
   /**
    * {@inheritdoc}
    */
@@ -211,11 +210,11 @@ class LinkableViewsAccordion extends ViewsAccordion {
       '#default_value' => $this->options['icon_active_header'],
       '#states' => $show_if_use_header_icons,
     ];
-    // $form['link_text'] = [
-    //   '#type' => 'textfield',
-    //   '#title' => $this->t('Link Text'),
-    //   '#default_value' => $this->options['link_text'],
-    // ];
+    $form['link_text'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Link Text'),
+      '#default_value' => $this->options['link_text'],
+    ];
   }
 
   /**
@@ -267,8 +266,7 @@ class LinkableViewsAccordion extends ViewsAccordion {
       }
     }
 
-    $this->view->element['#attached']['library'][] = 'views_accordion/views_accordion.accordion';
-    // $this->view->element['#attached']['library'][] = 'linkable_views_accordion/linkable_views_accordion.accordion';
+    $this->view->element['#attached']['library'][] = 'linkable_views_accordion/linkable_views_accordion.accordion';
 
     // Add the appropriate effect library if necessary.
     $effect = $this->options['animated'];
@@ -307,9 +305,9 @@ class LinkableViewsAccordion extends ViewsAccordion {
       $view_settings['header'] = '.js-views-accordion-group-header';
     }
 
-    // $view_settings['link_text'] = $this->options['link_text'];
+    $view_settings['linkText'] = $this->options['link_text'];
 
-    $this->view->element['#attached']['drupalSettings']['views_accordion'] = [$this->view->dom_id => $view_settings];
+    $this->view->element['#attached']['drupalSettings']['linkable_views_accordion'] = [$this->view->dom_id => $view_settings];
   }
 
   /**

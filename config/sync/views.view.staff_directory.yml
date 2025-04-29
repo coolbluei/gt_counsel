@@ -18,10 +18,10 @@ dependencies:
     - 'taxonomy_term:units:e6cd8f01-95d6-4e91-837d-b39393dc30b7'
     - 'taxonomy_term:units:fe4d9d09-3a77-473a-a6a9-002ef7b146cb'
   module:
+    - linkable_views_accordion
     - node
     - taxonomy
     - user
-    - views_accordion
 id: staff_directory
 label: 'Staff Directory'
 module: views
@@ -1989,7 +1989,7 @@ display:
         groups:
           1: AND
       style:
-        type: views_accordion
+        type: linkable_views_accordion
         options:
           grouping:
             -
@@ -2010,6 +2010,7 @@ display:
           use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
           icon_active_header: ui-icon-triangle-1-s
+          link_text: 'This is my link text'
       row:
         type: fields
         options:

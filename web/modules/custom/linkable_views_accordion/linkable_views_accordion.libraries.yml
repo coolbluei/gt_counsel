@@ -1,3 +1,9 @@
-linkable_views_accordion.accordion:
+main:
+  css:
+    base:
+      css/linkable-views-accordion.css: {}
+  js:
+    js/linkable-views-accordion.js: {}
   dependencies:
-    - views_accordion/views_accordion.accordion
+    - core/drupal
+    - jquery_ui_accordion/accordion
