@@ -700,7 +700,7 @@ article.node--type-personnel-profile .field--name-field-email a {
 }
 
 .views-row.gt-accordion .ui-accordion-content .copy-link::before {
-	content: '\f0c5';
+	content: '\f0c1';
 	margin-right: 0.5rem;
 	font-family: "FontAwesome";
 }
