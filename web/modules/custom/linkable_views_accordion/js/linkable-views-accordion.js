@@ -7,7 +7,8 @@
     attach() {
       if (drupalSettings.linkable_views_accordion) {
 
-        function handleClick(headerId) {
+        function handleClick(headerId, copyLink) {
+          $(copyLink).addClass('copied').text('Copied');
           navigator.clipboard.writeText(`${window.location.protocol}//${window.location.host}${window.location.pathname}#${headerId}`);
         };
 
@@ -63,7 +64,7 @@
             $(this).prepend(`<div class="copy-link-wrapper"><span class="copy-link">${linkText}</span></div>`);
 
             $(this).find('.copy-link').on('click', function () {
-              handleClick(headerId);
+              handleClick(headerId, this);
             });
           });
 
