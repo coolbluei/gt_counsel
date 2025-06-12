@@ -159,7 +159,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: staff-directory
+      path: staff-directory-units
     cache_metadata:
       max-age: -1
       contexts:
