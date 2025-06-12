@@ -312,10 +312,6 @@ thead {
 
 /************** VIEWS - MERCURY EVENTS ********************/
 
-#block-ethicscompliance-views-block-upcoming-events-block-1 {
-
-}
-
 .view-content-wrap {
 	display: -ms-flexbox;
 	display: flex;
@@ -588,6 +584,11 @@ article.node--type-personnel-profile .field--name-field-job-title {
 article.node--type-personnel-profile .field--name-field-email a {
   text-decoration: none;
   border-bottom: 3px solid #EEB211;
+}
+
+article.node--type-personnel-profile.node--view-mode-list-item .title {
+	font-size: 1.25rem;
+	font-weight: bold;
 }
 
 .headshot-message-block-wrapper .message-text-wrapper {

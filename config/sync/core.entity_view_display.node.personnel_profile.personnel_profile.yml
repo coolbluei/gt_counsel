@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.personnel_profile
     - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_display_in_contact_list
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
     - field.field.node.personnel_profile.field_forced_sort_order
@@ -14,6 +15,7 @@ dependencies:
     - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_leadership
     - field.field.node.personnel_profile.field_personnel_unit
+    - field.field.node.personnel_profile.field_phone
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
     - node.type.personnel_profile
@@ -39,6 +41,7 @@ content:
     region: content
 hidden:
   body: true
+  field_display_in_contact_list: true
   field_email: true
   field_first_name: true
   field_forced_sort_order: true
@@ -48,5 +51,6 @@ hidden:
   field_last_name: true
   field_leadership: true
   field_personnel_unit: true
+  field_phone: true
   field_subject_mater: true
   links: true
