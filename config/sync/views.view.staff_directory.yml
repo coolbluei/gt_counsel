@@ -9,6 +9,7 @@ dependencies:
     - field.storage.node.field_personnel_unit
     - field.storage.node.field_team
     - node.type.personnel_profile
+    - system.menu.main
     - taxonomy.vocabulary.team
     - taxonomy.vocabulary.units
   content:
@@ -1730,7 +1731,7 @@ display:
     display_plugin: page
     position: 6
     display_options:
-      title: 'Points of Contact'
+      title: 'Points of Contact V2'
       fields:
         field_personnel_unit:
           id: field_personnel_unit
@@ -2080,6 +2081,15 @@ display:
           required: true
       display_extenders: {  }
       path: contact
+      menu:
+        type: normal
+        title: 'Points of Contact V2'
+        description: ''
+        weight: -47
+        expanded: false
+        menu_name: main
+        parent: 'menu_link_content:88a8a4fb-7757-434b-894f-47fb2e84d527'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
@@ -2092,11 +2102,11 @@ display:
         - 'config:field.storage.node.field_team'
   page_2:
     id: page_2
-    display_title: 'Previous Page'
+    display_title: 'Points of Contact Page'
     display_plugin: page
     position: 6
     display_options:
-      title: 'Points of Contact'
+      title: 'Points of Contact V1'
       fields:
         field_personnel_unit:
           id: field_personnel_unit
@@ -2510,7 +2520,16 @@ display:
           required: true
       display_description: ''
       display_extenders: {  }
-      path: contact-previous
+      path: points-of-contact
+      menu:
+        type: normal
+        title: 'Points of Contact V1'
+        description: ''
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: 'menu_link_content:88a8a4fb-7757-434b-894f-47fb2e84d527'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
