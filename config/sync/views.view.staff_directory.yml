@@ -1731,7 +1731,7 @@ display:
     display_plugin: page
     position: 6
     display_options:
-      title: 'Points of Contact V2'
+      title: 'Staff V2'
       fields:
         field_personnel_unit:
           id: field_personnel_unit
@@ -1913,7 +1913,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2083,12 +2083,12 @@ display:
       path: contact
       menu:
         type: normal
-        title: 'Points of Contact V2'
+        title: 'Staff V2'
         description: ''
         weight: -47
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:88a8a4fb-7757-434b-894f-47fb2e84d527'
+        parent: 'menu_link_content:ef11eddf-0898-4d22-8c0b-b653458c7142'
         context: '0'
     cache_metadata:
       max-age: -1
