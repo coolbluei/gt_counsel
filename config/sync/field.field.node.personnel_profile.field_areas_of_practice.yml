@@ -1,0 +1,24 @@
+uuid: af1efed6-fe4e-4b9d-a20d-864a1fd695e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_practice
+    - filter.format.full_html
+    - node.type.personnel_profile
+  module:
+    - text
+id: node.personnel_profile.field_areas_of_practice
+field_name: field_areas_of_practice
+entity_type: node
+bundle: personnel_profile
+label: 'Areas of Practice'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

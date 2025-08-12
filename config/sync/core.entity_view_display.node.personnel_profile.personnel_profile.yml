@@ -5,9 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.personnel_profile
     - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_areas_of_practice
     - field.field.node.personnel_profile.field_display_in_contact_list
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_leadership_sort
     - field.field.node.personnel_profile.field_forced_sort_order
     - field.field.node.personnel_profile.field_forced_sort_subject
     - field.field.node.personnel_profile.field_image
@@ -41,9 +43,11 @@ content:
     region: content
 hidden:
   body: true
+  field_areas_of_practice: true
   field_display_in_contact_list: true
   field_email: true
   field_first_name: true
+  field_forced_leadership_sort: true
   field_forced_sort_order: true
   field_forced_sort_subject: true
   field_image: true

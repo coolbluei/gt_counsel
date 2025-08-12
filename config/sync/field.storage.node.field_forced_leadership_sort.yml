@@ -1,0 +1,20 @@
+uuid: 96a73ef9-3371-4721-9201-0707986931c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_forced_leadership_sort
+field_name: field_forced_leadership_sort
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
