@@ -22,7 +22,6 @@ dependencies:
     - media
     - node
     - paragraphs
-    - quickedit
     - system
     - toolbar
     - video_embed_field
@@ -40,7 +39,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access help pages'
-  - 'access in-place editing'
   - 'access toolbar'
   - 'administer block content'
   - 'administer block types'

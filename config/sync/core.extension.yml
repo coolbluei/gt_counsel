@@ -78,7 +78,6 @@ module:
   pathologic: 0
   pcol: 0
   phpass: 0
-  quickedit: 0
   rdf: 0
   redirect: 0
   safe_field_getter: 0
