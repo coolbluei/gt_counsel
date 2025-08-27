@@ -312,10 +312,6 @@ thead {
 
 /************** VIEWS - MERCURY EVENTS ********************/
 
-#block-ethicscompliance-views-block-upcoming-events-block-1 {
-
-}
-
 .view-content-wrap {
 	display: -ms-flexbox;
 	display: flex;
@@ -590,6 +586,11 @@ article.node--type-personnel-profile .field--name-field-email a {
   border-bottom: 3px solid #EEB211;
 }
 
+article.node--type-personnel-profile.node--view-mode-list-item .title {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
 .headshot-message-block-wrapper .message-text-wrapper {
   padding-top: 20px;
 }
@@ -684,6 +685,67 @@ article.node--type-personnel-profile .field--name-field-email a {
   padding-bottom: var(--views-responsive-grid--layout-gap);
   page-break-inside: avoid;
   break-inside: avoid;
+}
+
+.ui-accordion-content .views-row.gt-accordion {
+	margin-bottom: 1.5rem;
+}
+
+.views-row.gt-accordion .ui-accordion-content .copy-link-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.views-row.gt-accordion .ui-accordion-content .copy-link {
+	font-weight: 700;
+}
+
+.views-row.gt-accordion .ui-accordion-content .copy-link::before {
+	content: '\f0c1';
+	margin-right: 0.5rem;
+	font-family: "FontAwesome";
+}
+
+.views-row.gt-accordion .ui-accordion-content .copy-link.copied::before {
+	content: '\f00c';
+}
+
+.ui-accordion-content .views-row.gt-accordion:last-of-type {
+	margin-bottom: 0;
+}
+
+.view-staff-directory .views-field-field-team {
+  padding-left: 1em;
+  font-size: 14px;
+}
+
+.personnel-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  column-gap: 2em;
+  margin: 1em 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #cccccc;
+}
+.personnel-wrapper .grouping {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.3;
+}
+.personnel-wrapper .left-text {
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.personnel-wrapper .label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.personnel-wrapper .vi {
+  margin-bottom: 0.5em;
 }
 
 /* EOF to help git */

@@ -13,6 +13,7 @@ dependencies:
     - 'taxonomy_term:units:fe4d9d09-3a77-473a-a6a9-002ef7b146cb'
   module:
     - gt_legal_faq
+    - linkable_views_accordion
     - taxonomy
     - text
     - views_accordion
@@ -162,6 +163,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 100
           total_pages: null
           id: 0
@@ -176,7 +178,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -1337,8 +1338,39 @@ display:
           empty: true
           content: '<p>No results were found for this option.  Please change filters and try again.</p>'
           tokenize: false
+      style:
+        type: linkable_views_accordion
+        options:
+          grouping:
+            -
+              field: field_subject_matter_1
+              rendered: true
+              rendered_strip: false
+              use-grouping-header: 0
+          row_class: ''
+          default_row_class: true
+          disableifone: 0
+          row-start-open: none
+          collapsible: 1
+          animated: swing
+          animation_time: '300'
+          heightStyle: content
+          event: click
+          use_header_icons: 1
+          icon_header: ui-icon-triangle-1-e
+          icon_active_header: ui-icon-triangle-1-s
+          link_text: 'My link text'
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       defaults:
         empty: false
+        style: false
+        row: false
         fields: false
       display_extenders: {  }
       path: all-faq

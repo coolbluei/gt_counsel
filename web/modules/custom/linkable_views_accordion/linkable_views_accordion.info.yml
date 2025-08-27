@@ -1,0 +1,6 @@
+name: Linkable Views Accordion
+type: module
+description: 'Provides an accordion views display plugin with direct linking.'
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - views_accordion:views_accordion

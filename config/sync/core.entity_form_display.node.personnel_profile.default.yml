@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_areas_of_practice
+    - field.field.node.personnel_profile.field_display_in_contact_list
     - field.field.node.personnel_profile.field_email
     - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_leadership_sort
     - field.field.node.personnel_profile.field_forced_sort_order
     - field.field.node.personnel_profile.field_forced_sort_subject
     - field.field.node.personnel_profile.field_image
@@ -13,6 +16,7 @@ dependencies:
     - field.field.node.personnel_profile.field_last_name
     - field.field.node.personnel_profile.field_leadership
     - field.field.node.personnel_profile.field_personnel_unit
+    - field.field.node.personnel_profile.field_phone
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
     - image.style.thumbnail
@@ -21,22 +25,59 @@ dependencies:
     - field_group
     - image
     - path
+    - text
 third_party_settings:
   field_group:
     group_sort_order_controls:
       children:
         - field_forced_sort_order
         - field_forced_sort_subject
+        - field_forced_leadership_sort
       label: 'Sort Order Controls'
       region: content
-      parent_name: ''
-      weight: 15
+      parent_name: group_sort_grouping
+      weight: 16
       format_type: fieldset
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
         description: "Use 0 (zero) to set the personnel to alphabetic sorting.\r\nUse negative number to \"float\" personnel to the top of the list.\r\nUse positive number to \"push\" personnel to the end of the list."
+        required_fields: true
+    group_contact_info:
+      children:
+        - field_email
+        - field_phone
+      label: 'Contact Info'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_sort_grouping:
+      children:
+        - field_leadership
+        - field_display_in_contact_list
+        - field_personnel_unit
+        - field_team
+        - group_sort_order_controls
+      label: Sort/Grouping
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
         required_fields: true
 id: node.personnel_profile.default
 targetEntityType: node
@@ -49,9 +90,24 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_areas_of_practice:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_in_contact_list:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       placeholder: ''
@@ -63,6 +119,13 @@ content:
     region: content
     settings:
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_forced_leadership_sort:
+    type: number
+    weight: 19
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   field_forced_sort_order:
@@ -81,7 +144,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 3
+    weight: 5
     region: content
     settings:
       progress_indicator: throbber
@@ -89,7 +152,7 @@ content:
     third_party_settings: {  }
   field_job_title:
     type: string_textfield
-    weight: 4
+    weight: 3
     region: content
     settings:
       size: 60
@@ -105,14 +168,14 @@ content:
     third_party_settings: {  }
   field_leadership:
     type: boolean_checkbox
-    weight: 16
+    weight: 12
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_personnel_unit:
     type: entity_reference_autocomplete_tags
-    weight: 6
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
@@ -120,9 +183,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_team:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 15
     region: content
     settings:
       match_operator: CONTAINS

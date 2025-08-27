@@ -1,8 +1,9 @@
-uuid: 5a2a4ec5-22f2-45d2-af17-b44014522fc3
+uuid: 1b771794-5d3f-42af-a100-4bae970f46bf
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.contact_info
     - field.field.node.personnel_profile.body
     - field.field.node.personnel_profile.field_areas_of_practice
     - field.field.node.personnel_profile.field_display_in_contact_list
@@ -19,44 +20,27 @@ dependencies:
     - field.field.node.personnel_profile.field_phone
     - field.field.node.personnel_profile.field_subject_mater
     - field.field.node.personnel_profile.field_team
-    - image.style.large
     - node.type.personnel_profile
   module:
-    - image
+    - layout_builder
     - user
-id: node.personnel_profile.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.personnel_profile.contact_info
 targetEntityType: node
 bundle: personnel_profile
-mode: default
+mode: contact_info
 content:
   field_email:
     type: email_mailto
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
-    region: content
-  field_forced_leadership_sort:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: large
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
     weight: 0
     region: content
-  field_job_title:
+  field_phone:
     type: string
     label: hidden
     settings:
@@ -64,21 +48,16 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_phone:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   body: true
   field_areas_of_practice: true
   field_display_in_contact_list: true
   field_first_name: true
+  field_forced_leadership_sort: true
   field_forced_sort_order: true
   field_forced_sort_subject: true
+  field_image: true
+  field_job_title: true
   field_last_name: true
   field_leadership: true
   field_personnel_unit: true

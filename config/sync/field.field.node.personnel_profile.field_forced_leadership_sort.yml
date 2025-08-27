@@ -1,0 +1,25 @@
+uuid: 655507b3-b170-4b34-a7a0-9d798ba2abbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forced_leadership_sort
+    - node.type.personnel_profile
+id: node.personnel_profile.field_forced_leadership_sort
+field_name: field_forced_leadership_sort
+entity_type: node
+bundle: personnel_profile
+label: 'Forced Leadership Sort'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

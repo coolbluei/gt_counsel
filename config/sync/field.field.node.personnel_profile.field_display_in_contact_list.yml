@@ -1,0 +1,21 @@
+uuid: 08d20652-a95a-4128-b80e-f18d8631d969
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_in_contact_list
+    - node.type.personnel_profile
+id: node.personnel_profile.field_display_in_contact_list
+field_name: field_display_in_contact_list
+entity_type: node
+bundle: personnel_profile
+label: 'Display in Contact List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
