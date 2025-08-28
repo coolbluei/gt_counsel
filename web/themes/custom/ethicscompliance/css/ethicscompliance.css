@@ -324,6 +324,16 @@ thead {
 	justify-content: center !important;
 }
 
+.staff-list-accordion .view-content-wrap {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.staff-list-accordion .group-content h3 {
+  border-bottom: 4px solid var(--tech-gold1);
+}
+
 .main-container .view-content-wrap h4 a {
 	color: var(--gt-navy1);
 	font-size: 1.25rem;

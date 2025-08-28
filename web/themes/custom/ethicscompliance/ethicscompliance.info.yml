@@ -39,3 +39,4 @@ regions:
 
 libraries:
   - 'ethicscompliance/global-styling'
+  - 'ethicscompliance/custom-accordion'

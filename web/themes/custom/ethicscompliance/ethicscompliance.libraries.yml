@@ -5,6 +5,7 @@ global-styling:
   js:
     js/ethicscompliance.js: {}
 
+
 # Banner with Overlay Block.
 banner-with-overlay:
   version: "1.0.x"
@@ -13,3 +14,10 @@ banner-with-overlay:
       templates/block/banner_with_overlay/css/banner-overlay.css: {}
   dependencies:
     - core/jquery
+
+custom-accordion:
+  js:
+    js/ethicsAccordionConstruction.js: {}
+  dependencies:
+    - core/drupal
+    - jquery_ui_accordion/accordion

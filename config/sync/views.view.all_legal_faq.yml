@@ -1359,7 +1359,7 @@ display:
           use_header_icons: 1
           icon_header: ui-icon-triangle-1-e
           icon_active_header: ui-icon-triangle-1-s
-          link_text: 'My link text'
+          link_text: 'Copy this FAQ link'
       row:
         type: fields
         options:

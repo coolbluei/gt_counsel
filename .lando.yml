@@ -1,9 +1,9 @@
 name: gencon
-recipe: drupal8
+recipe: drupal10
 config:
   php: '8.2'
-  via: 'nginx'
-  webroot: './web'
+  via: nginx
+  webroot: web
   xdebug: true
   config:
     php: lando.php.ini
