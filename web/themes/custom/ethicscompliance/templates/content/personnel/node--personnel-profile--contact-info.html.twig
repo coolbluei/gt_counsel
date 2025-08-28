@@ -76,9 +76,17 @@
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'flex-2col',
 ]
 %}
 
 <article{{ attributes.addClass(classes) }}>
-    {{ content }}
+  <div class="left-column">
+    <h5>{{ label }}</h5>
+    {{ content|without('field_areas_of_practice') }}
+    <div class="bio"><a href="{{ url }}">Bio</a></div>
+  </div>
+  <div class="right-column">
+      {{ content.field_areas_of_practice }}
+  </div>
 </article>

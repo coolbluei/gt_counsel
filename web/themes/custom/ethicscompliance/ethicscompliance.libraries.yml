@@ -16,6 +16,9 @@ banner-with-overlay:
     - core/jquery
 
 custom-accordion:
+  css:
+    theme:
+      css/gt-accordion.css: {}
   js:
     js/ethicsAccordionConstruction.js: {}
   dependencies:

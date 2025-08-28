@@ -15,7 +15,7 @@
           return;
         }
         $this.find('.view-content').first().accordion(accordionSettings);
-        $this.addClass(onceClass);
+        $this.addClass('gt-accordion', onceClass);
       })
       // Build with jQuery
     }

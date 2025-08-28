@@ -4231,7 +4231,7 @@ display:
       display_extenders: {  }
       path: contact-v4
       menu:
-        type: normal
+        type: none
         title: 'Staff Directory'
         description: ''
         weight: -47
@@ -4915,12 +4915,10 @@ display:
           default_row_class: true
           uses_fields: true
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: contact_info
       defaults:
         title: false
         css_class: false

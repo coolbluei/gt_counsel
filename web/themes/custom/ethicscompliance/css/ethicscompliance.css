@@ -325,12 +325,13 @@ thead {
 }
 
 .staff-list-accordion .view-content-wrap {
-  flex-direction: column;
+  display: block;
   margin: 0;
   padding: 0;
 }
 
 .staff-list-accordion .group-content h3 {
+  font-size: 24px;
   border-bottom: 4px solid var(--tech-gold1);
 }
 
@@ -755,6 +756,22 @@ article.node--type-personnel-profile.node--view-mode-list-item .title {
   text-align: center;
 }
 .personnel-wrapper .vi {
+  margin-bottom: 0.5em;
+}
+.flex-2col {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: nowrap;
+}
+.staff-list-accordion .flex-2col .left-column {
+  width: 50%;
+}
+.staff-list-accordion article {
+  padding: 1em 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.staff-list-accordion article .left-column >div {
   margin-bottom: 0.5em;
 }
 
