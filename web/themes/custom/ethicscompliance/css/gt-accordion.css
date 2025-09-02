@@ -143,3 +143,6 @@
 .gt-accordion .ui-corner-br {
   border-bottom-right-radius: 0;
 }
+.gt-accordion .copy-link {
+  cursor: pointer;
+}

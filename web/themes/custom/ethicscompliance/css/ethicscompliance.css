@@ -702,22 +702,27 @@ article.node--type-personnel-profile.node--view-mode-list-item .title {
 	margin-bottom: 1.5rem;
 }
 
-.views-row.gt-accordion .ui-accordion-content .copy-link-wrapper {
+.views-row.gt-accordion .ui-accordion-content .copy-link-wrapper,
+.gt-accordion .ui-accordion-content .copy-link-wrapper {
+
 	display: flex;
 	justify-content: end;
 }
 
-.views-row.gt-accordion .ui-accordion-content .copy-link {
+.views-row.gt-accordion .ui-accordion-content .copy-link,
+.gt-accordion .ui-accordion-content .copy-link {
 	font-weight: 700;
 }
 
-.views-row.gt-accordion .ui-accordion-content .copy-link::before {
+.views-row.gt-accordion .ui-accordion-content .copy-link::before,
+.gt-accordion .ui-accordion-content .copy-link::before {
 	content: '\f0c1';
 	margin-right: 0.5rem;
 	font-family: "FontAwesome";
 }
 
-.views-row.gt-accordion .ui-accordion-content .copy-link.copied::before {
+.views-row.gt-accordion .ui-accordion-content .copy-link.copied::before,
+.gt-accordion .ui-accordion-content .copy-link.copied::before {
 	content: '\f00c';
 }
 
