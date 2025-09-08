@@ -535,9 +535,8 @@ body h6 {
 }
 
 .headshot-message-block-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+  display: block;
+  margin-bottom: 1em;
 }
 
 .headshot-wrapper {
@@ -547,16 +546,26 @@ body h6 {
   border: 1px solid #c2c2c2;
   background-color: #ffffff;
   box-shadow: 0px 4px 4px 0 rgba(0,0,0, 0.15);
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 .headshot-message-block-wrapper .headshot-wrapper {
   min-width: 320px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .headshot-message-block-wrapper {
+    display: flex;
     flex-direction: column;
+    gap: 40px;
+    align-items: center;
   }
+  .headshot-wrapper {
+    margin: 0;
+  }
+
 }
 
 .view-staff-directory .views-view-responsive-grid--horizontal {

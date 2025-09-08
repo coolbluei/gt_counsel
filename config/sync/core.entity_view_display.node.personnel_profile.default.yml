@@ -23,12 +23,20 @@ dependencies:
     - node.type.personnel_profile
   module:
     - image
+    - text
     - user
 id: node.personnel_profile.default
 targetEntityType: node
 bundle: personnel_profile
 mode: default
 content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_email:
     type: email_mailto
     label: hidden
@@ -57,14 +65,13 @@ content:
     region: content
   field_phone:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
     region: content
 hidden:
-  body: true
   field_areas_of_practice: true
   field_display_in_contact_list: true
   field_first_name: true
