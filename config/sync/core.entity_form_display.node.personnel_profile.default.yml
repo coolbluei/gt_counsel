@@ -84,6 +84,16 @@ targetEntityType: node
 bundle: personnel_profile
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 14
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 8
@@ -92,7 +102,7 @@ content:
     third_party_settings: {  }
   field_areas_of_practice:
     type: text_textarea
-    weight: 26
+    weight: 15
     region: content
     settings:
       rows: 5
@@ -252,5 +262,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_subject_mater: true

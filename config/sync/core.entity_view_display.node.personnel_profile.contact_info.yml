@@ -64,6 +64,11 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   body: true
   field_display_in_contact_list: true
@@ -77,4 +82,3 @@ hidden:
   field_personnel_unit: true
   field_subject_mater: true
   field_team: true
-  links: true

@@ -41,6 +41,11 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   field_areas_of_practice: true
@@ -57,4 +62,3 @@ hidden:
   field_personnel_unit: true
   field_phone: true
   field_subject_mater: true
-  links: true
