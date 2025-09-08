@@ -90,6 +90,11 @@
       {{ title_suffix }}
       {{ content.field_job_title }}
       {{ content|without('field_image', 'field_job_title') }}
+      {% if has_bio %}
+        <div class="bio-link-wrapper">
+          <a class="bio-link" href="{{ url }}">Bio</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </article>

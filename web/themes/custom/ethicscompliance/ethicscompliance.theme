@@ -22,8 +22,9 @@ function ethicscompliance_preprocess_node(&$variables) {
   $node = $variables['node'];
   switch ($node->getType()) {
     case 'personnel_profile':
-      // Watch for missing field.
+      // Watch for missing fields.
       $variables['missing_aop'] = empty(SafeFieldGetter::firstComplex($node, 'field_areas_of_practice', NULL));
+      $variables['has_bio'] = $node->body && !empty($node->body->getValue());
       break;
   }
 }
