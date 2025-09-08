@@ -779,7 +779,7 @@ article.node--type-personnel-profile.node--view-mode-list-item .title {
   flex-wrap: nowrap;
 }
 .staff-list-accordion .flex-2col .left-column {
-  width: 50%;
+  min-width: 50%;
 }
 .staff-list-accordion article {
   padding: 1em 0;
@@ -787,6 +787,20 @@ article.node--type-personnel-profile.node--view-mode-list-item .title {
 }
 .staff-list-accordion article .left-column >div {
   margin-bottom: 0.5em;
+}
+.gt-accordion .ui-accordion .ui-accordion-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 570px) {
+  .flex-2col {
+    flex-direction: column;
+    align-items: start;
+  }
+  .staff-list-accordion .flex-2col .left-column {
+    min-width: unset;
+  }
 }
 
 /* EOF to help git */

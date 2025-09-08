@@ -83,10 +83,19 @@
 <article{{ attributes.addClass(classes) }}>
   <div class="left-column">
     <h5>{{ label }}</h5>
-    {{ content|without('field_areas_of_practice') }}
+    {% if missing_aop %}
+      {{ content|without('field_job_title') }}
+    {% else %}
+      {{ content|without('field_areas_of_practice') }}
+    {% endif %}
     <div class="bio"><a href="{{ url }}">Bio</a></div>
   </div>
   <div class="right-column">
+    {% if missing_aop %}
+      {{ content.field_job_title}}
+    {% else %}
       {{ content.field_areas_of_practice }}
+    {% endif %}
+
   </div>
 </article>
