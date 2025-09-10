@@ -1,0 +1,66 @@
+uuid: 4a153bfa-56b1-4779-b7f2-60b01fba4864
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.contact_summary
+    - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_areas_of_practice
+    - field.field.node.personnel_profile.field_display_in_contact_list
+    - field.field.node.personnel_profile.field_email
+    - field.field.node.personnel_profile.field_first_name
+    - field.field.node.personnel_profile.field_forced_leadership_sort
+    - field.field.node.personnel_profile.field_forced_sort_order
+    - field.field.node.personnel_profile.field_forced_sort_subject
+    - field.field.node.personnel_profile.field_image
+    - field.field.node.personnel_profile.field_job_title
+    - field.field.node.personnel_profile.field_last_name
+    - field.field.node.personnel_profile.field_leadership
+    - field.field.node.personnel_profile.field_personnel_unit
+    - field.field.node.personnel_profile.field_phone
+    - field.field.node.personnel_profile.field_subject_mater
+    - field.field.node.personnel_profile.field_team
+    - node.type.personnel_profile
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.personnel_profile.contact_summary
+targetEntityType: node
+bundle: personnel_profile
+mode: contact_summary
+content:
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_areas_of_practice: true
+  field_display_in_contact_list: true
+  field_first_name: true
+  field_forced_leadership_sort: true
+  field_forced_sort_order: true
+  field_forced_sort_subject: true
+  field_image: true
+  field_job_title: true
+  field_last_name: true
+  field_leadership: true
+  field_personnel_unit: true
+  field_subject_mater: true
+  field_team: true
+  links: true

@@ -1,0 +1,11 @@
+uuid: c97f76eb-a411-421d-a640-7c742e2c39a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contact_summary
+label: 'Contact Summary'
+description: 'Used on Points of Contact page to display contact info in the middle column.'
+targetEntityType: node
+cache: true

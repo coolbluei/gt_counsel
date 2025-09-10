@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.contact_info
+    - core.entity_view_mode.node.contact_summary
     - core.entity_view_mode.node.list_item
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
@@ -2587,7 +2588,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view_mode: contact_info
+          view_mode: contact_summary
         field_team:
           id: field_team
           table: node__field_team
