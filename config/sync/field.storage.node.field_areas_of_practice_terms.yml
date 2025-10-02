@@ -1,12 +1,12 @@
-uuid: 549220c0-3038-46d5-826d-b889703cbcb4
+uuid: dca1ac8e-03d1-4978-9a14-453d5d31f3b0
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_area_of_practice_terms
-field_name: field_area_of_practice_terms
+id: node.field_areas_of_practice_terms
+field_name: field_areas_of_practice_terms
 entity_type: node
 type: entity_reference
 settings:

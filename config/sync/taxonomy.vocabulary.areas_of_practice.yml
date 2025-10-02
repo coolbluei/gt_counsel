@@ -1,0 +1,9 @@
+uuid: 9fba0914-c01a-4504-9c06-b5ad9a147003
+langcode: en
+status: true
+dependencies: {  }
+name: 'Areas of Practice'
+vid: areas_of_practice
+description: null
+weight: 0
+new_revision: false
