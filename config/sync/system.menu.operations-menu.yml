@@ -1,0 +1,8 @@
+uuid: b233ce7b-6dc8-463d-b28f-bf715c204e18
+langcode: en
+status: true
+dependencies: {  }
+id: operations-menu
+label: 'Operations Menu'
+description: ''
+locked: false

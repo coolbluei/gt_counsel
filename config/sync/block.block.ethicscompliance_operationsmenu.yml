@@ -1,0 +1,29 @@
+uuid: 4e814d9d-3bde-4e86-bbd9-2d4006548375
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.operations-menu
+  module:
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_operationsmenu
+theme: ethicscompliance
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:operations-menu'
+settings:
+  id: 'system_menu_block:operations-menu'
+  label: 'Operations Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /operations

@@ -1,0 +1,8 @@
+uuid: 93240903-abe8-490c-944b-d6039a4f7b90
+langcode: en
+status: true
+dependencies: {  }
+id: areas-of-practice-menu
+label: 'Areas of Practice Menu'
+description: 'For use only on the General Areas of Practice page'
+locked: false

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.list_item
     - field.field.node.personnel_profile.body
+    - field.field.node.personnel_profile.field_area_of_practice_terms
     - field.field.node.personnel_profile.field_areas_of_practice
     - field.field.node.personnel_profile.field_display_in_contact_list
     - field.field.node.personnel_profile.field_email
@@ -43,6 +44,7 @@ content:
     region: content
 hidden:
   body: true
+  field_area_of_practice_terms: true
   field_areas_of_practice: true
   field_display_in_contact_list: true
   field_email: true
