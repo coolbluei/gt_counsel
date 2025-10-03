@@ -26,9 +26,9 @@
       };
 
       // Find accordions.
-      let $accordionView = $('.staff-list-accordion');
+      let $accordionView = $('.staff-list-accordion, .accordion-h2');
       // Skip any that have already been processed.
-      if ($accordionView.hasClass(onceClass)) {
+      if ($accordionView.first().hasClass(onceClass)) {
         return;
       }
       $accordionView.each(function() {

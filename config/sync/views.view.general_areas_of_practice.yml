@@ -143,7 +143,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -334,7 +334,7 @@ display:
           admin_label: 'field_areas_of_practice_terms: Taxonomy term'
           plugin_id: standard
           required: false
-      css_class: accordion-h2
+      css_class: 'accordion-h2 gap-style'
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -354,7 +354,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: practice-view
+      path: general-areas-of-practice
     cache_metadata:
       max-age: -1
       contexts:

@@ -803,4 +803,15 @@ article.node--type-personnel-profile.node--view-mode-list-item .title {
   }
 }
 
+.gap-style .view-content-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+}
+.gap-style .view-content-wrap .item {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
 /* EOF to help git */

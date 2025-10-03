@@ -19,7 +19,7 @@
 #}
 {% set cleanTitle = title|trim %}
 {% if not cleanTitle is empty %}
-  <div class="sub-group">
+
   <h3>{{ title }}</h3>
 {% endif %}
     <div class="view-content-wrap">
@@ -35,5 +35,4 @@
        {% endfor %}
     </div>
 {% if not cleanTitle is empty %}
-  </div>
 {% endif %}
