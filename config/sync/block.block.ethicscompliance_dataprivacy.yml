@@ -1,22 +1,22 @@
-uuid: 1a443bb2-a99f-4869-a67b-c7d3a27b8a89
+uuid: 2a08a47a-e38e-4036-a664-6b8dc5d23766
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.affiliated-unit
+    - system.menu.data-privacy
   module:
     - system
   theme:
     - ethicscompliance
-id: ethicscompliance_affiliatedunit
+id: ethicscompliance_dataprivacy
 theme: ethicscompliance
 region: sidebar_first
-weight: -18
+weight: -19
 provider: null
-plugin: 'system_menu_block:affiliated-unit'
+plugin: 'system_menu_block:data-privacy'
 settings:
-  id: 'system_menu_block:affiliated-unit'
-  label: 'Affiliated Organizations'
+  id: 'system_menu_block:data-privacy'
+  label: 'Data Privacy'
   label_display: '0'
   provider: system
   level: 1
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/affiliated/*\r\n/affiliated-organizations/*"
+    pages: '/data-privacy/*'

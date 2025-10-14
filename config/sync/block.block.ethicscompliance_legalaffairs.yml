@@ -11,7 +11,7 @@ dependencies:
 id: ethicscompliance_legalaffairs
 theme: ethicscompliance
 region: sidebar_first
-weight: -16
+weight: -17
 provider: null
 plugin: 'system_menu_block:legal-affairs'
 settings:

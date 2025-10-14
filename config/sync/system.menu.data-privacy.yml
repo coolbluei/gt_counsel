@@ -1,0 +1,8 @@
+uuid: 7c8747eb-5f8c-4104-98c7-637dd957d819
+langcode: en
+status: true
+dependencies: {  }
+id: data-privacy
+label: 'Data Privacy'
+description: ''
+locked: false

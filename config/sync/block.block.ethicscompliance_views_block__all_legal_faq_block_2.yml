@@ -12,7 +12,7 @@ dependencies:
 id: ethicscompliance_views_block__all_legal_faq_block_2
 theme: ethicscompliance
 region: content
-weight: -16
+weight: -15
 provider: null
 plugin: 'views_block:all_legal_faq-block_2'
 settings:

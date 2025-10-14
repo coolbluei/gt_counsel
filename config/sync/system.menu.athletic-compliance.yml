@@ -1,0 +1,8 @@
+uuid: bcd6b411-80f5-457e-88bc-2336761d29cf
+langcode: en
+status: true
+dependencies: {  }
+id: athletic-compliance
+label: 'Athletic Compliance'
+description: 'Athletic Compliance Sidebar Menu'
+locked: false

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_areas_of_practice_terms
     - node.type.personnel_profile
+    - system.menu.main
     - taxonomy.vocabulary.areas_of_practice
   module:
     - node
@@ -24,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'General Areas of Practice'
+      title: 'Practice Areas Directory'
       fields:
         field_areas_of_practice_terms:
           id: field_areas_of_practice_terms
@@ -178,15 +179,15 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        weight:
-          id: weight
+        name:
+          id: name
           table: taxonomy_term_field_data
-          field: weight
+          field: name
           relationship: field_areas_of_practice_terms
           group_type: group
           admin_label: ''
           entity_type: taxonomy_term
-          entity_field: weight
+          entity_field: name
           plugin_id: standard
           order: ASC
           expose:
@@ -197,6 +198,19 @@ display:
           id: field_forced_sort_order_value
           table: node__field_forced_sort_order
           field: field_forced_sort_order_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        field_forced_sort_subject_value:
+          id: field_forced_sort_subject_value
+          table: node__field_forced_sort_subject
+          field: field_forced_sort_subject_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -355,6 +369,15 @@ display:
     display_options:
       display_extenders: {  }
       path: general-areas-of-practice
+      menu:
+        type: normal
+        title: 'Practice Areas Directory'
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: 'menu_link_content:39f58ce1-2a25-49e1-b9b7-99c912edfec8'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,30 @@
+uuid: 39c3ef80-6575-4d85-a42e-7912eae6848f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2651a8ac-0c28-41be-955b-12b7e7de8212'
+  module:
+    - block_content
+    - system
+  theme:
+    - ethicscompliance
+id: ethicscompliance_generalpracticeheader
+theme: ethicscompliance
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:2651a8ac-0c28-41be-955b-12b7e7de8212'
+settings:
+  id: 'block_content:2651a8ac-0c28-41be-955b-12b7e7de8212'
+  label: 'General Practice Header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /general-areas-of-practice

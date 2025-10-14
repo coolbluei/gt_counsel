@@ -12,7 +12,7 @@ dependencies:
 id: ethicscompliance_ethicscontactusonabout
 theme: ethicscompliance
 region: sidebar_first
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:e9316c8d-86f9-4401-8b85-0b064e11a50b'
 settings:

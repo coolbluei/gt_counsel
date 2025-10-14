@@ -23,6 +23,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.personnel_profile
   module:
+    - field_formatter_class
     - field_group
     - image
     - path
@@ -110,14 +111,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_areas_of_practice_terms:
-    type: entity_reference_autocomplete_tags
+    type: options_buttons
     weight: 26
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings:
       field_formatter_class:
         class: ''
